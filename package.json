@@ -1,0 +1,11 @@
+{
+  "name": "multiplayer-pong-game",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/thevictorwhyte/pip-pong-game.git",
+  "author": "thevictorwhyte <victordavidwhyte@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "^4.5.1"
+  }
+}
