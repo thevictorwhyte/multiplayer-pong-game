@@ -182,19 +182,8 @@ function startGame() {
   });
 }
 
-let readyPlayerCount = 0;
 // On Load
 startGame();
 socket.on("connect", () => {
   console.log("Connected as...", socket.id);
-
-  socket.on("ready", () => {
-    console.log("Player ready", socket.id);
-
-    readyPlayerCount++;
-
-    if (readyPlayerCount === 2) {
-      io.emit("startGame", socket.id);
-    }
-  });
 });
